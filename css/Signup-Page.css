@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding-top: 160px;
+    
+}
+.header{
+    position: absolute;
+    background-color: #66100F;;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+}
+.search-icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+.search-text{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 100px;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+.logo-picture{
+    width: 220px;
+
+}
+.right-margin{
+    margin-right: 300px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.right-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.right-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 450px;
+}
+.sub-header{
+    position: absolute;
+    top: 120px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    background: #FFFEFE;
+    background: linear-gradient(180deg, #FFFEFE 0%, #cecece 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vouch-text{
+    font-family: "Inter", sans-serif;
+    color: #6A6868;
+    font-weight: 500;
+}
+
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.signup-text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 82px;
+    color: #66100F;
+    margin-bottom: 20px;
+}
+.signup-input-box{
+    display: flex;
+    flex-direction: column;
+    height: 485px;
+    justify-content: space-between;
+}
+.signup-input{
+    border-color: #66100F;
+    color: #66100F;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 18px;
+    padding: 15px 200px 15px 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.gender-checkbox-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 785px;
+    left: 742px;
+}
+
+.firstname-text{
+    color: #66100F;
+    font-size: 20px;
+    font-family: "Mohave", sans-serif; 
+    font-weight: 700;
+    position: absolute;
+    top: 261px;
+    left: 745px;
+}
+
+.lastname-text{
+    color: #66100F;
+    font-size: 20px;
+    font-family: "Mohave", sans-serif; 
+    font-weight: 700;
+    position: absolute;
+    top: 345px;
+    left: 745px;
+}
+
+.email-text{
+    color: #66100F;
+    font-size: 20px;
+    font-family: "Mohave", sans-serif; 
+    font-weight: 700;
+    position: absolute;
+    top: 428px;
+    left: 745px;
+}
+
+.address-text{
+    color: #66100F;
+    font-size: 20px;
+    font-family: "Mohave", sans-serif; 
+    font-weight: 700;
+    position: absolute;
+    top: 511px;
+    left: 745px;
+}
+
+.number-text{
+    color: #66100F;
+    font-size: 20px;
+    font-family: "Mohave", sans-serif; 
+    font-weight: 700;
+    position: absolute;
+    top: 594px;
+    left: 745px;
+}
+
+.birthday-text{
+    color: #66100F;
+    font-size: 20px;
+    font-family: "Mohave", sans-serif; 
+    font-weight: 700;
+    position: absolute;
+    top: 677px;
+    left: 745px;
+}
+
+.gender-text{
+    color: #66100F;
+    font-size: 20px;
+    font-family: "Mohave", sans-serif; 
+    font-weight: 700;
+    position: absolute;
+    top: 760px;
+    left: 745px;
+}
+
+.gender-checkbox{
+    color: #66100F;
+}
+.gender-option{
+    color: #66100F;
+    margin-right: 15px;
+}
+
+.signup-btn{
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 70px;
+
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: #d22f2e;
+    --btn-bg-2: #66100F;
+    --btn-bg-color: #D8D01F;
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.4em 4.5em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 2rem);
+    font-family: "Mohave", sans-serif; 
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgb(90, 0, 0), 0px 5px 5px -1px rgba(187, 6, 6, 0.25), inset 4px 4px 8px rgba(245, 40, 40, 0.5), inset -4px -4px 8px rgba(112, 2, 2, 0.35);
+}    
+.signup-btn:hover{
+    background-position: right top;
+}
+
+.signin-link{
+    color: #66100F;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+.signin-link:hover{
+    color: #d22f2e;
+    text-decoration: underline;
+}
+.footer{
+    position: relative;
+    background-color: #66100F;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 380px;
+}
