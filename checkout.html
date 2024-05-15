@@ -1,3 +1,5 @@
+85% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for ₱89.00 ₱0 for 1 month.
+checkout.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,37 +72,40 @@
               <label for="cod" ><img src="imgs/cod.png" alt="" class="cod"></label>
             </div>
           </div>
-
+          <form action="">
           <div class="pay-container">
             <div>
               <label for="CardNumber"><b>Card Number</b></label>
-              <input class="card-num" type="number"  id="CardNumber">
+              <input class="card-num" type="number"  id="CardNumber" required>
             </div>
             <div>
               <label for="SecurityCode"><b>Security Code</b></label>
-              <input class="secure" type="number" id="SecurityCode">
+              <input class="secure" type="number" id="SecurityCode" required>
             </div>
             
           </div>
-
+          
           <div class="buyer-info">
             <div>
             <label for="firstname"><b>Firstname</b></label>
-              <input  type="text" id="firstname">
+              <input  type="text" id="firstname" required>
             </div>
             <div>
               <label for="lastname"><b>Lastname</b></label>
-              <input  type="text"  id="lastname">
+              <input  type="text"  id="lastname" required>
             </div>
           </div>
 
           <div class="expi">
             <div>
               <label for="exp"><b>Card Expiration</b></label>
-              <input type="date" id="exp">
+              <input type="date" id="exp" required>
             </div>
             
-            <button class="submit-btn" onclick="alert('YOU SUCCESSFULLY PURCHASED OUR ITEMS');">Submit Payment</button>
+            <button class="submit-btn" type="submit" onclick="
+              alert('YOU SUCCESSFULLY PURCHASE AN ITEM');
+            ">Submit Payment</button>
+          </form>
 
           </div>
 
@@ -110,38 +115,7 @@
     </div>
 
     <div class="item-details">
-      <!-- start item detail -->
-      <!-- <div class="item-check">
-        <p class="title"><b>Order Details</b></p>
-        <div class="itemPic">
-          <img src="imgs/items-pic/badminton1.png" alt="">
-          <div class="name-type">
-            <div>
-              <p class="itemName"><b>Nike</b></p>
-              <p class="typeItem">Sports</p>
-            </div>
-            <div class="price-item">
-              <p>&#8369;</p>
-              <p><b>200.00</b></p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- end item detail -->
 
-      <!-- summary -->
-      <!-- <div class="item-summary">
-        <p class="title"><b>Summary</b></p>
-        <p class="subTotal"><b>Subtotal</b> <span>200.00</span></p>
-        <p class="delivery-fee"><b>Delivery Fee</b> <span>7.00</span></p>
-      </div> -->
-      <!-- end summary -->
-
-      <!-- total -->
-      <!-- <div class="total-price">
-        <p class="total"><b>Total</b> <span>207.00</span></p>
-      </div> -->
-      <!-- end total -->
       
     </div>
     
@@ -149,6 +123,7 @@
 
 </body>
 <script src="js/functions.js"></script>
-
-<script></script>
+<script src="js/displayItem_checkout.js"></script>
+<script>
+</script>
 </html>

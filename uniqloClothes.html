@@ -1,3 +1,5 @@
+85% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for ₱89.00 ₱0 for 1 month.
+uniqloClothes.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,7 @@
   <div class="side-bar" id="side-bar">
     <div class="side-bar-buttons">
       <button onclick="sideBar();"><img src="imgs/back-sidebar.png" alt=""></button>
-      <button class="clear-cart" onclick="removeItem();"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
+      <button class="clear-cart" onclick="removeItem('all');"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
     </div>
       <div class="container-added-carts">
       </div>
@@ -83,7 +85,7 @@
             ">
               <button class="addTocart-btn" onclick="
                 addToCart();
-                displayAddedCart('crewNeck','CREW NECK SHORT SLEEVES', 890);
+                displayAddedCart('crewNeck','CREW NECK SHORT SLEEVES', 890,'Uniqlo');
               ">Add to cart</button>
               <button class="buyNow-btn" data-pic="crewNeck" data-name="CREW NECK SHORT SLEEVES" data-price="890" data-type="Uniqlo">Buy now</button>
             </div>
@@ -100,7 +102,7 @@
             ">
               <button class="addTocart-btn" onclick="
                 addToCart();
-                displayAddedCart('airismPolo','AIRISM OPEN POLO SHIRT', 900);
+                displayAddedCart('airismPolo','AIRISM OPEN POLO SHIRT', 900,'Uniqlo');
               ">Add to cart</button>
               <button class="buyNow-btn" data-pic="airismPolo" data-name="AIRISM OPEN POLO SHIRT" data-price="900" data-type="Uniqlo">Buy now</button>
             </div>
@@ -117,7 +119,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('crewNeckSweater','CREW NECK SWEATER', 1990);
+              displayAddedCart('crewNeckSweater','CREW NECK SWEATER', 1990,'Uniqlo');
             ">Add to cart</button>
               <button class="buyNow-btn" data-pic="crewNeckSweater" data-name="CREW NECK SWEATER" data-price="1990" data-type="Uniqlo">Buy now</button>
             </div>
@@ -134,7 +136,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('sweatHoodie','SWEAT LONG SLEEVE HOODIE', 1990);
+            displayAddedCart('sweatHoodie','SWEAT LONG SLEEVE HOODIE', 1990,'Uniqlo');
           ">Add to cart</button>
             <button class="buyNow-btn" data-pic="sweatHoodie" data-name="SWEAT LONG SLEEVE HOODIE" data-price="1990" data-type="Uniqlo">Buy now</button>
           </div>
@@ -151,7 +153,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('kawXut','KAW x UT', 750);
+            displayAddedCart('kawXut','KAW x UT', 750,'Uniqlo');
           ">Add to cart</button>
             <button class="buyNow-btn" data-pic="kawXut" data-name="KAW x UT" data-price="750" data-type="Uniqlo">Buy now</button>
           </div>
@@ -168,7 +170,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('ultraBrown','ULTRA LIGHT BROWN JACKET', 1999);
+              displayAddedCart('ultraBrown','ULTRA LIGHT BROWN JACKET', 1999,'Uniqlo');
             ">Add to cart</button>
               <button class="buyNow-btn" data-pic="ultraBrown" data-name="ULTRA LIGHT BROWN JACKET" data-price="1999" data-type="Uniqlo">Buy now</button>
             </div>
@@ -207,7 +209,7 @@
     <!-- END OF FOOTER -->
 </div>
 </body>
-<script src="js/functions.js">
-</script>
-<script src="js/display_function.js"></script>  
+<script src="js/functions.js"></script>
+<script src="js/display_function.js"></script> 
+<script src="js/displayItem_checkout.js"></script> 
 </html>

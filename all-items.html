@@ -21,7 +21,7 @@
   <div class="side-bar" id="side-bar">
     <div class="side-bar-buttons">
       <button onclick="sideBar();"><img src="imgs/back-sidebar.png" alt=""></button>
-      <button class="clear-cart" onclick="removeItem();"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
+      <button class="clear-cart" onclick="removeItem('all');"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
     </div>
       <div class="container-added-carts">
       </div>
@@ -83,9 +83,10 @@
               margin-top: 15px;
             ">
               <button class="addTocart-btn" onclick="
-                addToCart();
-                displayAddedCart('giannis 3','GIANNIS IMMORTALITY 3', 5670);
-              ">Add to cart</button>
+                addToCart(); 
+                displayAddedCart('giannis 3','GIANNIS IMMORTALITY 3', 5670,'Sports');">
+                Add to cart
+              </button>
 
               <button class="buyNow-btn" data-pic="giannis 3" data-name="GIANNIS IMMORTALITY 3" data-price="5670" data-type="Sports">Buy now</button>
 
@@ -104,7 +105,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('gucciJacket','BOMBER JACKET', 10850);
+              displayAddedCart('gucciJacket','BOMBER JACKET', 10850, 'Gucci');
             ">Add to cart</button>
             <button class="buyNow-btn" data-pic="gucciJacket" data-name="BOMBER JACKET" data-price="10850" data-type="Gucci">Buy now</button>
             </div>
@@ -121,7 +122,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('NikeGT3','NIKE G.T.CUT 3', 4995);
+              displayAddedCart('NikeGT3','NIKE G.T.CUT 3', 4995,'Sports');
             ">Add to cart</button>
               <button class="buyNow-btn" data-pic="NikeGT3" data-name="NIKE G.T.CUT 3" data-price="4995" data-type="Sports">Buy now</button>
             </div>
@@ -138,7 +139,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('gucciShirt','OVERSIZED COTTON SHIRT', 4995);
+            displayAddedCart('gucciShirt','OVERSIZED COTTON SHIRT', 4995, 'Gucci');
           ">Add to cart</button>
           <button class="buyNow-btn" data-pic="gucciShirt" data-name="OVERSIZED COTTON SHIRT" data-price="4995" data-type="Gucci">Buy now</button>
           </div>
@@ -155,7 +156,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('poloGucci','GUCCI POLO SHIRT', 15850);
+            displayAddedCart('poloGucci','GUCCI POLO SHIRT', 15850, 'Gucci');
           ">Add to cart</button>
             <button class="buyNow-btn" data-pic="poloGucci" data-name="GUCCI POLO SHIRT" data-price="15850" data-type="Gucci">Buy now</button>
           </div>
@@ -172,7 +173,7 @@
           ">
             <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('airismPolo','AIRISM OPEN POLO SHIRT', 900);
+              displayAddedCart('airismPolo','AIRISM OPEN POLO SHIRT', 900,'Uniqlo');
             ">Add to cart</button>
             <button class="buyNow-btn" data-pic="airismPolo" data-name="AIRISM OPEN POLO SHIRT" data-price="900" data-type="Uniqlo">Buy now</button>
           </div>
@@ -189,7 +190,7 @@
           ">
             <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('NikePrecision6','NIKE PRECISION 6', 2799);
+              displayAddedCart('NikePrecision6','NIKE PRECISION 6', 2799,'Sports');
             ">Add to cart</button>
              <button class="buyNow-btn" data-pic="NikePrecision6" data-name="NIKE PRECISION 6" data-price="2799" data-type="Sports">Buy now</button>
           </div>
@@ -206,7 +207,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('YOWNEX_AERUS','YONEX AERUS',8500);
+            displayAddedCart('YOWNEX_AERUS','YONEX AERUS',8500,'Sports');
           ">Add to cart</button>
             <button class="buyNow-btn" data-pic="YOWNEX_AERUS" data-name="YONEX AERUS" data-price="8500" data-type="Sports">Buy now</button>
           </div>
@@ -223,7 +224,7 @@
           ">
             <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('whiteDune','AIR 1 WHITE DUNE',4828);
+              displayAddedCart('whiteDune','AIR 1 WHITE DUNE',4828,'Sneakers');
             ">Add to cart</button>
             <button class="buyNow-btn" data-pic="whiteDune" data-name="AIR 1 WHITE DUNE" data-price="4828" data-type="Sneakers">Buy now</button>
           </div>
@@ -268,4 +269,6 @@
 <script src="js/display_function.js"></script>
 
 <script src="js/Quantity.js"></script>
+
+<script src="js/displayItem_checkout.js"></script>
 </html>

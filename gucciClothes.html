@@ -1,3 +1,5 @@
+85% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for ₱89.00 ₱0 for 1 month.
+gucciClothes.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,7 @@
   <div class="side-bar" id="side-bar">
     <div class="side-bar-buttons">
       <button onclick="sideBar();"><img src="imgs/back-sidebar.png" alt=""></button>
-      <button class="clear-cart" onclick="removeItem();"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
+      <button class="clear-cart" onclick="removeItem('all');"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
     </div>
       <div class="container-added-carts">
       </div>
@@ -85,7 +87,7 @@
             ">
               <button class="addTocart-btn" onclick="
                 addToCart();
-                displayAddedCart('piquetGucci','COTTON PIQUET POLO SHIRT', 39950);
+                displayAddedCart('piquetGucci','COTTON PIQUET POLO SHIRT', 39950, 'Gucci');
               ">Add to cart</button>
                <button class="buyNow-btn" data-pic="piquetGucci" data-name="COTTON PIQUET POLO SHIRT" data-price="39950" data-type="Gucci">Buy now</button>
             </div>
@@ -103,7 +105,7 @@
             ">
               <button class="addTocart-btn" onclick="
                 addToCart();
-                displayAddedCart('jacquard','HORSEBIT JACQUARD KNIT POLO', 10599);
+                displayAddedCart('jacquard','HORSEBIT JACQUARD KNIT POLO', 10599, 'Gucci');
               ">Add to cart</button>
               <button class="buyNow-btn" data-pic="jacquard" data-name="HORSEBIT JACQUARD KNIT POLO" data-price="10599" data-type="Gucci">Buy now</button>
             </div>
@@ -121,7 +123,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('cottonJersay','COTTON JERSEY T-SHIRT',15399);
+              displayAddedCart('cottonJersay','COTTON JERSEY T-SHIRT',15399, 'Gucci');
             ">Add to cart</button>
               <button class="buyNow-btn" data-pic="cottonJersay" data-name="COTTON JERSEY T-SHIRT" data-price="15399" data-type="Gucci">Buy now</button>
             </div>
@@ -139,7 +141,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('gucciShirt','OVERSIZED COTTON SHIRT', 4995);
+            displayAddedCart('gucciShirt','OVERSIZED COTTON SHIRT', 4995, 'Gucci');
           ">Add to cart</button>
           <button class="buyNow-btn" data-pic="gucciShirt" data-name="OVERSIZED COTTON SHIRT" data-price="4995" data-type="Gucci">Buy now</button>
           </div>
@@ -157,7 +159,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('poloGucci','GUCCI POLO SHIRT', 15850);
+            displayAddedCart('poloGucci','GUCCI POLO SHIRT', 15850, 'Gucci');
           ">Add to cart</button>
             <button class="buyNow-btn" data-pic="poloGucci" data-name="GUCCI POLO SHIRT" data-price="15850" data-type="Shirt">Buy now</button>
           </div>
@@ -175,7 +177,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('gucciJacket','BOMBER JACKET', 10850);
+            displayAddedCart('gucciJacket','BOMBER JACKET', 10850, 'Gucci');
           ">Add to cart</button>
              <button class="buyNow-btn" data-pic="gucciJacket" data-name="BOMBER JACKET" data-price="10850" data-type="Gucci">Buy now</button>
           </div>
@@ -217,4 +219,5 @@
 </body>
 <script src="js/functions.js"></script>
 <script src="js/display_function.js"></script> 
+<script src="js/displayItem_checkout.js"></script>
 </html>

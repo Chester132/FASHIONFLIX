@@ -1,3 +1,5 @@
+85% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for ₱89.00 ₱0 for 1 month.
+Sneakers.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,7 @@
   <div class="side-bar" id="side-bar">
     <div class="side-bar-buttons">
       <button onclick="sideBar();"><img src="imgs/back-sidebar.png" alt=""></button>
-      <button class="clear-cart" onclick="removeItem();"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
+      <button class="clear-cart" onclick="removeItem('all');"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
     </div>
       <div class="container-added-carts">
       </div>
@@ -84,7 +86,7 @@
             ">
               <button class="addTocart-btn" onclick="
                 addToCart();
-                displayAddedCart('wolfGrey','AIR 1 WOLF GREY', 9900);
+                displayAddedCart('wolfGrey','AIR 1 WOLF GREY', 9900,'Sneakers');
               ">Add to cart</button>
               <button class="buyNow-btn" data-pic="wolfGrey" data-name="AIR 1 WOLF GREY" data-price="9900" data-type="Sneakers">Buy now</button>
             </div>
@@ -103,7 +105,7 @@
             ">
               <button class="addTocart-btn" onclick="
                 addToCart();
-                displayAddedCart('whiteDune','AIR 1 WHITE DUNE',4828);
+                displayAddedCart('whiteDune','AIR 1 WHITE DUNE',4828,'Sneakers');
               ">Add to cart</button>
               <button class="buyNow-btn" data-pic="whiteDune" data-name="AIR 1 WHITE DUNE" data-price="4828" data-type="Sneakers">Buy now</button>
             </div>
@@ -121,7 +123,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('panda','AIR 1 PANDA', 12350);
+              displayAddedCart('panda','AIR 1 PANDA', 12350,'Sneakers');
             ">Add to cart</button>
               <button class="buyNow-btn" data-pic="panda" data-name="AIR 1 PANDA" data-price="12350" data-type="Sneakers">Buy now</button>
             </div>
@@ -138,7 +140,7 @@
           ">
             <button class="addTocart-btn" onclick="
             naddToCart();
-            displayAddedCart('platinumTint','AIR PLATINUM TINT', 10295);
+            displayAddedCart('platinumTint','AIR PLATINUM TINT', 10295,'Sneakers');
           ">Add to cart</button>
             <button class="buyNow-btn" data-pic="platinumTint" data-name="AIR PLATINUM TINT" data-price="10295" data-type="Sneakers">Buy now</button>
           </div>
@@ -155,7 +157,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('tripleWhite','AIR 1 TRIPLE WHITE', 7995);
+            displayAddedCart('tripleWhite','AIR 1 TRIPLE WHITE', 7995,'Sneakers');
           ">Add to cart</button>
             <button class="buyNow-btn" data-pic="tripleWhite" data-name="AIR 1 TRIPLE WHITE" data-price="7995" data-type="Sneakers">Buy now</button>
           </div>
@@ -172,7 +174,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('blueSuede','NIKE BLUE SUEDE', 6910);
+              displayAddedCart('blueSuede','NIKE BLUE SUEDE', 6910,'Sneakers');
             ">Add to cart</button>
               <button class="buyNow-btn" data-pic="blueSuede" data-name="NIKE BLUE SUEDE" data-price="6910" data-type="Sneakers">Buy now</button>
             </div>
@@ -211,8 +213,7 @@
     <!-- END OF FOOTER -->
 </div>
 </body>
-<script src="js/functions.js">
-  
-</script>
+<script src="js/functions.js"></script>
 <script src="js/display_function.js"></script> 
+<script src="js/displayItem_checkout.js"></script>
 </html>

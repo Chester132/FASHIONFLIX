@@ -1,3 +1,5 @@
+85% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for ₱89.00 ₱0 for 1 month.
+sportsShoes.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,7 @@
   <div class="side-bar" id="side-bar">
     <div class="side-bar-buttons">
       <button onclick="sideBar();"><img src="imgs/back-sidebar.png" alt=""></button>
-      <button class="clear-cart" onclick="removeItem();"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
+      <button class="clear-cart" onclick="removeItem('all');"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
     </div>
       <div class="container-added-carts">
       </div>
@@ -83,7 +85,7 @@
           ">
             <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('giannis 3','GIANNIS IMMORTALITY 3', 5670);
+              displayAddedCart('giannis 3','GIANNIS IMMORTALITY 3', 5670,'Sports');
             ">Add to cart</button>
 
             <button class="buyNow-btn" data-pic="giannis 3" data-name="GIANNIS IMMORTALITY 3" data-price="5670" data-type="Sports">Buy now</button>
@@ -102,7 +104,7 @@
             ">
               <button class="addTocart-btn" onclick="
                 addToCart();
-                displayAddedCart('NikePrecision6','NIKE PRECISION 6', 2799);
+                displayAddedCart('NikePrecision6','NIKE PRECISION 6', 2799,'Sports');
               ">Add to cart</button>
                <button class="buyNow-btn" data-pic="NikePrecision6" data-name="NIKE PRECISION 6" data-price="2799" data-type="Sports">Buy now</button>
             </div>
@@ -119,7 +121,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('NikeGT3','NIKE G.T.CUT 3', 4995);
+              displayAddedCart('NikeGT3','NIKE G.T.CUT 3', 4995,'Sports');
             ">Add to cart</button>
               <button class="buyNow-btn" data-pic="NikeGT3" data-name="NIKE G.T.CUT 3" data-price="4995" data-type="Sports">Buy now</button>
             </div>
@@ -136,7 +138,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('badminton1','YONEX ECLIPSION X', 11506);
+            displayAddedCart('badminton1','YONEX ECLIPSION X', 11506,'Sports');
           ">Add to cart</button>
              <button class="buyNow-btn" data-pic="badminton1" data-name="YONEX ECLIPSION X" data-price="11506" data-type="Sports">Buy now</button>
           </div>
@@ -153,7 +155,7 @@
           ">
             <button class="addTocart-btn" onclick="
             addToCart();
-            displayAddedCart('YOWNEX_AERUS','YONEX AERUS',8500);
+            displayAddedCart('YOWNEX_AERUS','YONEX AERUS',8500,'Sports');
           ">Add to cart</button>
             <button class="buyNow-btn" data-pic="YOWNEX_AERUS" data-name="YONEX AERUS" data-price="8500" data-type="Sports">Buy now</button>
           </div>
@@ -170,7 +172,7 @@
             ">
               <button class="addTocart-btn" onclick="
               addToCart();
-              displayAddedCart('comfortYonex','YONEX COMFORT Z', 10950);
+              displayAddedCart('comfortYonex','YONEX COMFORT Z', 10950,'Sports');
             ">Add to cart</button>
               <button class="buyNow-btn" data-pic="comfortYonex" data-name="YONEX COMFORT Z" data-price="10950" data-type="Sports">Buy now</button>
             </div>
@@ -209,8 +211,7 @@
     <!-- END OF FOOTER -->
 </div>
 </body>
-<script src="js/functions.js">
-  
-</script>
-<script src="js/display_function.js"></script>  
+<script src="js/functions.js"></script>
+<script src="js/display_function.js"></script> 
+<script src="js/displayItem_checkout.js"></script> 
 </html>
