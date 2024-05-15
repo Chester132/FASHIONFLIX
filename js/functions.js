@@ -128,3 +128,5 @@ function displayAddedCart(name_pic, name, price,type) {
   shopNow.onclick=function(){
     window.location.href="all-items.html";
   };
+
+

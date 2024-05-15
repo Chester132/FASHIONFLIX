@@ -52,46 +52,6 @@ var buttons = document.getElementsByClassName("addTocart-btn");
       });
   }
    
-  const itemDetails=document.querySelector('.item-details');
-
-  function displayItemDetail(name_pic,name,price,type){
-    
-    itemDetails.innerHTML=`
-    <!-- start item detail -->
-    <div class="item-check">
-      <p class="title"><b>Order Details</b></p>
-      <div class="itemPic">
-        <img src="imgs/items-pic/${name_pic}.png" alt="">
-        <div class="name-type">
-          <div>
-            <p class="itemName"><b>${name}</b></p>
-            <p class="typeItem">${type}</p>
-          </div>
-          <div class="price-item">
-            <p>&#8369;</p>
-            <p><b>${price}.00</b></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end item detail -->
-
-    <!-- summary -->
-    <div class="item-summary">
-      <p class="title"><b>Summary</b></p>
-      <p class="subTotal"><b>Subtotal</b> <span>${price}.00</span></p>
-      <p class="delivery-fee"><b>Delivery Fee</b> <span>7.00</span></p>
-    </div>
-    <!-- end summary -->
-
-    <!-- total -->
-    <div class="total-price">
-      <p class="total"><b>Total</b> <span>${price+7}.00</span></p>
-    </div>
-    <!-- end total -->
-  </div>
-    `;
-  };
     
        
     // ADD QUANTITY
