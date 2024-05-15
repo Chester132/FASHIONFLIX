@@ -1,0 +1,69 @@
+body{
+  padding-top: 100px;
+}
+.part-page{
+  display: flex;
+  justify-content: center;
+}
+.part-page p{
+  font-size: 3rem;
+  font-family: teko;
+}
+/* END OF TITLE */
+.grid-layout{
+  display: grid;
+}
+.items{
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  column-gap: 60px;
+  row-gap: 20px;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.shoes-items{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+.addTocart-btn, .buyNow-btn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.6rem;
+  font-family: teko;
+  box-shadow: inset 0 0 rgb(255,240,40);
+  cursor: pointer;
+  transition: all 0.20s;
+  transition-delay: 0.10s;
+}
+.buyNow-btn{
+  box-shadow: inset 0 0 red;
+}
+.buyNow-btn:hover{
+  box-shadow: inset 130px 0 red;
+}
+.addTocart-btn:hover{
+  box-shadow: inset 130px 0 rgb(255,240,40);
+}
+.brand{
+  opacity: 0.5;
+  font-size: 1.1rem;
+}
+.price{
+  font-size: 1.3rem;
+}
+.shoes-items img{
+  width: 250px;
+  aspect-ratio: 1/1;
+}
+.shoes-items p{
+  margin: 0;
+  font-family: teko;
+}

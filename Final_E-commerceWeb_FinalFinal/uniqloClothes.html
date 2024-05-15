@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="imgs/web-logo.png">
+  <title>FashionFlix - Clothes/uniqlo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav-bar.css">
+  <link rel="stylesheet" href="css/all-items.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="side-bar" id="side-bar">
+    <div class="side-bar-buttons">
+      <button onclick="sideBar();"><img src="imgs/back-sidebar.png" alt=""></button>
+      <button class="clear-cart" onclick="removeItem();"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
+    </div>
+      <div class="container-added-carts">
+      </div>
+    
+  </div>
+  <!-- END SIDEBAR -->
+    <div class="first" id="first-scroll">
+      <!-- NAVIGATION BAR -->
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="realHomepage.html"><img src="imgs/web-logo.png" alt=""></a>
+        </div>
+
+        <div class="shortcuts">
+          <a href="realHomepage.html">Home</a>
+          <a href="all-items.html">All Products</a>
+          <div class="dropdown">
+            <a>Shoes</a>
+            <div class="dropdown-menu">
+              <a href="sportsShoes.html">Sports</a>
+              <a href="Sneakers.html">Sneakers</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a>Clothes</a>
+            <div class="dropdown-menu">
+              <a href="gucciClothes.html">Gucci</a>
+            <a href="uniqloClothes.html">Uniqlo</a>
+            </div>
+          </div>
+          <a href="aboutUs.html">About Us</a>
+        </div>
+
+        <div class="cart-account">
+          <button class="cartt" 
+          onclick="
+          sideBar();
+          "><p class="num-items"></p><img src="imgs/cart-icon.webp" alt=""></button>
+          <a href="log-in.html"><img src="imgs/account-icon.webp" alt=""></a>
+        </div>
+    </div>
+    <!-- END OF NAV -->
+    <div class="part-page">
+
+      <p>UNIQLO CLOTHES</p>
+
+    </div>
+    <!-- END OF TITLE -->
+    <div class="grid-layout">
+      <div class="items">
+          <div class="shoes-items">
+            <img src="imgs/items-pic/crewNeck.png" alt="">
+            <p class="brand">Uniqlo</p>
+            <p style="font-size: 1.6rem;">CREW NECK SHORT SLEEVES</p>
+            <p class="price">&#8369;890</p>
+            <div style="display: flex;
+              column-gap: 20px;
+              margin-top: 15px;
+            ">
+              <button class="addTocart-btn" onclick="
+                addToCart();
+                displayAddedCart('crewNeck','CREW NECK SHORT SLEEVES', 890);
+              ">Add to cart</button>
+              <button class="buyNow-btn" data-pic="crewNeck" data-name="CREW NECK SHORT SLEEVES" data-price="890" data-type="Uniqlo">Buy now</button>
+            </div>
+          </div>
+          <!-- end of items -->
+          <div class="shoes-items">
+            <img src="imgs/items-pic/airismPolo.png" alt="">
+            <p class="brand">Uniqlo</p>
+            <p style="font-size: 1.6rem;">AIRISM OPEN POLO SHIRT</p>
+            <p class="price">&#8369;900</p>
+            <div style="display: flex;
+              column-gap: 20px;
+              margin-top: 15px;
+            ">
+              <button class="addTocart-btn" onclick="
+                addToCart();
+                displayAddedCart('airismPolo','AIRISM OPEN POLO SHIRT', 900);
+              ">Add to cart</button>
+              <button class="buyNow-btn" data-pic="airismPolo" data-name="AIRISM OPEN POLO SHIRT" data-price="900" data-type="Uniqlo">Buy now</button>
+            </div>
+          </div>
+          <!-- end of items -->
+          <div class="shoes-items">
+            <img src="imgs/items-pic/crewNeckSweater.png" alt="">
+            <p class="brand">Uniqlo</p>
+            <p style="font-size: 1.6rem;">CREW NECK SWEATER</p>
+            <p class="price">&#8369;1,990</p>
+            <div style="display: flex;
+              column-gap: 20px;
+              margin-top: 15px;
+            ">
+              <button class="addTocart-btn" onclick="
+              addToCart();
+              displayAddedCart('crewNeckSweater','CREW NECK SWEATER', 1990);
+            ">Add to cart</button>
+              <button class="buyNow-btn" data-pic="crewNeckSweater" data-name="CREW NECK SWEATER" data-price="1990" data-type="Uniqlo">Buy now</button>
+            </div>
+          </div>
+        <!-- end of items -->
+        <div class="shoes-items">
+          <img src="imgs/items-pic/sweatHoodie.png" alt="">
+          <p class="brand">Uniqlo</p>
+          <p style="font-size: 1.6rem;">SWEAT LONG SLEEVE HOODIE</p>
+          <p class="price">&#8369;1,990</p>
+          <div style="display: flex;
+            column-gap: 20px;
+            margin-top: 15px;
+          ">
+            <button class="addTocart-btn" onclick="
+            addToCart();
+            displayAddedCart('sweatHoodie','SWEAT LONG SLEEVE HOODIE', 1990);
+          ">Add to cart</button>
+            <button class="buyNow-btn" data-pic="sweatHoodie" data-name="SWEAT LONG SLEEVE HOODIE" data-price="1990" data-type="Uniqlo">Buy now</button>
+          </div>
+        </div>
+        <!-- end of items -->
+        <div class="shoes-items">
+          <img src="imgs/items-pic/kawXut.png" alt="">
+          <p class="brand">Uniqlo</p>
+          <p style="font-size: 1.6rem;">KAW x UT</p>
+          <p class="price">&#8369;750</p>
+          <div style="display: flex;
+            column-gap: 20px;
+            margin-top: 15px;
+          ">
+            <button class="addTocart-btn" onclick="
+            addToCart();
+            displayAddedCart('kawXut','KAW x UT', 750);
+          ">Add to cart</button>
+            <button class="buyNow-btn" data-pic="kawXut" data-name="KAW x UT" data-price="750" data-type="Uniqlo">Buy now</button>
+          </div>
+        </div>
+        <!-- end of items -->
+        <div class="shoes-items">
+            <img src="imgs/items-pic/ultraBrown.png" alt="">
+            <p class="brand">Uniqlo</p>
+            <p style="font-size: 1.6rem;">ULTRA LIGHT BROWN JACKET</p>
+            <p class="price">&#8369;1,999</p>
+            <div style="display: flex;
+              column-gap: 20px;
+              margin-top: 15px;
+            ">
+              <button class="addTocart-btn" onclick="
+              addToCart();
+              displayAddedCart('ultraBrown','ULTRA LIGHT BROWN JACKET', 1999);
+            ">Add to cart</button>
+              <button class="buyNow-btn" data-pic="ultraBrown" data-name="ULTRA LIGHT BROWN JACKET" data-price="1999" data-type="Uniqlo">Buy now</button>
+            </div>
+          </div>
+          <!-- end of items -->
+        </div>
+      </div>
+  
+    <!-- START OF FOOTER -->
+    <footer class="footer-main">
+      <div class="left-footer">
+        <p>PRODUCTS</p>
+        <a href="all-items.html">Random</a>
+        <a href="sportsShoes.html">Shoes</a>
+        <a href="gucciClothes.html">Clothes</a>
+      </div>
+
+      <div class="middle-footer">
+        <p>CONTACTS</p>
+        <ul>
+          <li><a href=""><img src="imgs/home-icon.png" alt=""> &nbsp;P-12 POGI ST. HANDSOME VILLAGE, DAVAO CITY</a></li>
+          <li><a href=""><img src="imgs/tele-icon.png" alt=""> &nbsp;09696969690</a></li>
+          <li><a href=""><img src="imgs/email-icon.png" alt=""> &nbsp;fashionFlix@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="right-footer">
+        <p>FOLLOW US</p>
+        <ul>
+          <li><a href="https://www.facebook.com/"><img class="fb" src="imgs/fb-icon.webp" alt=""></a></li>
+          <li><a href="https://www.youtube.com/watch?v=GBIIQ0kP15E"><img class="yt" src="imgs/YT-icon.png" alt=""></a></li>
+          <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="ins" src="imgs/insta-icon.png" alt=""></li></a>
+        </ul>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+</div>
+</body>
+<script src="js/functions.js">
+</script>
+<script src="js/display_function.js"></script>  
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="imgs/web-logo.png">
+  <title>FashionFlix - shoes/sneakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav-bar.css">
+  <link rel="stylesheet" href="css/all-items.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="side-bar" id="side-bar">
+    <div class="side-bar-buttons">
+      <button onclick="sideBar();"><img src="imgs/back-sidebar.png" alt=""></button>
+      <button class="clear-cart" onclick="removeItem();"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
+    </div>
+      <div class="container-added-carts">
+      </div>
+    
+  </div>
+  <!-- END SIDEBAR -->
+    <div class="first" id="first-scroll">
+      <!-- NAVIGATION BAR -->
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="realHomepage.html"><img src="imgs/web-logo.png" alt=""></a>
+        </div>
+
+        <div class="shortcuts">
+          <a href="realHomepage.html">Home</a>
+          <a href="all-items.html">All Products</a>
+          <div class="dropdown">
+            <a>Shoes</a>
+            <div class="dropdown-menu">
+              <a href="sportsShoes.html">Sports</a>
+              <a href="Sneakers.html">Sneakers</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a>Clothes</a>
+            <div class="dropdown-menu">
+              <a href="gucciClothes.html">Gucci</a>
+            <a href="uniqloClothes.html">Uniqlo</a>
+            </div>
+          </div>
+          <a href="aboutUs.html">About Us</a>
+        </div>
+
+        <div class="cart-account">
+          <button class="cartt" 
+          onclick="
+          sideBar();
+          "><p class="num-items"></p><img src="imgs/cart-icon.webp" alt=""></button>
+          <a href="log-in.html"><img src="imgs/account-icon.webp" alt=""></a>
+        </div>
+    </div>
+    <!-- END OF NAV -->
+    <div class="part-page">
+
+      <p>SNEAKERS SHOES</p>
+
+    </div>
+    <!-- END OF TITLE -->
+    <div class="grid-layout">
+      <div class="items">
+          <div class="shoes-items">
+            <img src="imgs/items-pic/wolfGrey.png" alt="" style="width: 300px;
+            margin-bottom: 30px;">
+            <p class="brand">Sneakers</p>
+            <p style="font-size: 1.6rem;">AIR 1 WOLF GREY</p>
+            <p class="price">&#8369;9,900</p>
+            <div style="display: flex;
+              column-gap: 20px;
+              margin-top: 15px;
+            ">
+              <button class="addTocart-btn" onclick="
+                addToCart();
+                displayAddedCart('wolfGrey','AIR 1 WOLF GREY', 9900);
+              ">Add to cart</button>
+              <button class="buyNow-btn" data-pic="wolfGrey" data-name="AIR 1 WOLF GREY" data-price="9900" data-type="Sneakers">Buy now</button>
+            </div>
+          </div>
+          <!-- end of items -->
+          <div class="shoes-items">
+            <img src="imgs/items-pic/whiteDune.png" alt="" style="height: 300px;
+            width: 300px;
+            margin-bottom: 30px;">
+            <p class="brand">Sneakers</p>
+            <p style="font-size: 1.6rem;">AIR 1 WHITE DUNE</p>
+            <p class="price">&#8369;4,828</p>
+            <div style="display: flex;
+              column-gap: 20px;
+              margin-top: 15px;
+            ">
+              <button class="addTocart-btn" onclick="
+                addToCart();
+                displayAddedCart('whiteDune','AIR 1 WHITE DUNE',4828);
+              ">Add to cart</button>
+              <button class="buyNow-btn" data-pic="whiteDune" data-name="AIR 1 WHITE DUNE" data-price="4828" data-type="Sneakers">Buy now</button>
+            </div>
+          </div>
+          <!-- end of items -->
+          <div class="shoes-items">
+            <img src="imgs/items-pic/panda.png" alt="" style="width: 300px;
+            margin-bottom: 30px;">
+            <p class="brand">Sneakers</p>
+            <p style="font-size: 1.6rem;">AIR 1 PANDA</p>
+            <p class="price">&#8369;12,350</p>
+            <div style="display: flex;
+              column-gap: 20px;
+              margin-top: 15px;
+            ">
+              <button class="addTocart-btn" onclick="
+              addToCart();
+              displayAddedCart('panda','AIR 1 PANDA', 12350);
+            ">Add to cart</button>
+              <button class="buyNow-btn" data-pic="panda" data-name="AIR 1 PANDA" data-price="12350" data-type="Sneakers">Buy now</button>
+            </div>
+          </div>
+        <!-- end of items -->
+        <div class="shoes-items">
+          <img src="imgs/items-pic/platinumTint.png" alt="">
+          <p class="brand">Sneakers</p>
+          <p style="font-size: 1.6rem;">AIR PLATINUM TINT</p>
+          <p class="price">&#8369;10,295</p>
+          <div style="display: flex;
+            column-gap: 20px;
+            margin-top: 15px;
+          ">
+            <button class="addTocart-btn" onclick="
+            naddToCart();
+            displayAddedCart('platinumTint','AIR PLATINUM TINT', 10295);
+          ">Add to cart</button>
+            <button class="buyNow-btn" data-pic="platinumTint" data-name="AIR PLATINUM TINT" data-price="10295" data-type="Sneakers">Buy now</button>
+          </div>
+        </div>
+        <!-- end of items -->
+        <div class="shoes-items">
+          <img src="imgs/items-pic/tripleWhite.png" alt="">
+          <p class="brand">Sneakers</p>
+          <p style="font-size: 1.6rem;">AIR 1 TRIPLE WHITE</p>
+          <p class="price">&#8369;7,995</p>
+          <div style="display: flex;
+            column-gap: 20px;
+            margin-top: 15px;
+          ">
+            <button class="addTocart-btn" onclick="
+            addToCart();
+            displayAddedCart('tripleWhite','AIR 1 TRIPLE WHITE', 7995);
+          ">Add to cart</button>
+            <button class="buyNow-btn" data-pic="tripleWhite" data-name="AIR 1 TRIPLE WHITE" data-price="7995" data-type="Sneakers">Buy now</button>
+          </div>
+        </div>
+        <!-- end of items -->
+        <div class="shoes-items">
+            <img src="imgs/items-pic/blueSuede.png" alt="">
+            <p class="brand">Sneakers</p>
+            <p style="font-size: 1.6rem;">NIKE BLUE SUEDE</p>
+            <p class="price">&#8369;6,910</p>
+            <div style="display: flex;
+              column-gap: 20px;
+              margin-top: 15px;
+            ">
+              <button class="addTocart-btn" onclick="
+              addToCart();
+              displayAddedCart('blueSuede','NIKE BLUE SUEDE', 6910);
+            ">Add to cart</button>
+              <button class="buyNow-btn" data-pic="blueSuede" data-name="NIKE BLUE SUEDE" data-price="6910" data-type="Sneakers">Buy now</button>
+            </div>
+          </div>
+          <!-- end of items -->
+        </div>
+      </div>
+  
+    <!-- START OF FOOTER -->
+    <footer class="footer-main">
+      <div class="left-footer">
+        <p>PRODUCTS</p>
+        <a href="#third">Featured</a>
+        <a href="sportsShoes.html">Shoes</a>
+        <a href="gucciClothes.html">Clothes</a>
+      </div>
+
+      <div class="middle-footer">
+        <p>CONTACTS</p>
+        <ul>
+          <li><a href=""><img src="imgs/home-icon.png" alt=""> &nbsp;P-12 POGI ST. HANDSOME VILLAGE, DAVAO CITY</a></li>
+          <li><a href=""><img src="imgs/tele-icon.png" alt=""> &nbsp;09696969690</a></li>
+          <li><a href=""><img src="imgs/email-icon.png" alt=""> &nbsp;fashionFlix@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="right-footer">
+        <p>FOLLOW US</p>
+        <ul>
+          <li><a href="https://www.facebook.com/"><img class="fb" src="imgs/fb-icon.webp" alt=""></a></li>
+          <li><a href="https://www.youtube.com/watch?v=GBIIQ0kP15E"><img class="yt" src="imgs/YT-icon.png" alt=""></a></li>
+          <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="ins" src="imgs/insta-icon.png" alt=""></li></a>
+        </ul>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+</div>
+</body>
+<script src="js/functions.js">
+  
+</script>
+<script src="js/display_function.js"></script> 
+</html>

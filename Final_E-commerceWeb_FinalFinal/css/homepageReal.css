@@ -1,0 +1,227 @@
+ 
+ .first-contents{
+  display: flex;
+  transition: all 0.15s;
+  
+ }
+ 
+ .headers,.model-pics{
+  flex: 1;
+ }
+ .headers{
+  padding-top: 85px;
+  padding-left: 120px;
+ }
+ .headers h1{
+  font-size: 3.7rem;
+  margin-bottom: 10px;
+  font-family: Bebas Neue;
+  color: rgb(99, 14, 14);
+ }
+ .headers p{
+  font-family: Bebas Neue;
+  font-size: 1.6rem;
+  color: black;
+ }
+ 
+ .headers button {
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: rgb(156, 22, 22);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  position: relative;
+ }
+ .headers button, .headers button span {
+  transition: 200ms;
+ }
+ .headers button .text {
+  transform: translateX(110px);
+  
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+ }
+ 
+ .headers button .icon {
+  position: absolute;
+  padding-right: 10px;
+  border-right: 1px solid #680707;
+  height: 60px;
+  width: 60px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .headers button img {
+  width: 50px;
+  filter: brightness(0)invert(1);
+ }
+ 
+ .headers button:hover {
+  background: rgb(156, 22, 22);
+  -webkit-box-shadow: 1px 1px 13px #ff1010, -1px -1px 13px #e00808;
+  box-shadow: 1px 1px 13px #9b0505, -1px -1px 13px #ff0000;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+ }
+ 
+ .headers button:hover .text {
+  color: transparent;
+ }
+ 
+ .headers button:hover .icon {
+  width: 150px;
+  border-right: none;
+  transform: translateX(45px);
+ }
+ 
+ .headers button:focus {
+  outline: none;
+ }
+ 
+ .headers button:active .icon svg {
+  transform: scale(0.8);
+ }
+ 
+ .headers button:active{
+  opacity: 0.7;
+ } 
+ 
+ .model-pics{
+  padding-top: 20px;
+  padding-bottom: 0;
+  
+ }
+ .model-pics img{
+  max-width: 560px;
+  aspect-ratio: auto;
+ }
+
+ /* END OF FIRST CONTENTS */
+
+ .second-contents{
+  background-color: rgb(233, 231, 231);
+  scroll-snap-align: start;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 160px 40px 160px 40px;
+ }
+ .promo-items{
+  height: 450px;
+  width: 340px;
+  min-width: 250px;
+  position: relative;
+ }
+ .promo-items img{
+  height: 100%;
+  width: 100%;
+  filter: brightness(40%);
+ }
+ .promo-items p{
+  position: absolute;
+  font-size: 47px;
+  font-family: Bebas neue;
+  color: white;
+  bottom: 90px;
+  left: 43px;
+ }
+ .promo-items a{
+  position: absolute;
+  border-radius: 10px;
+  padding: 25px 45px 25px 45px;
+  background-color: rgb(134, 18, 18);
+  text-decoration: none;
+  color: white;
+  font-family: Bebas neue;
+  font-size: 20px;
+  letter-spacing: 2px;
+  bottom: 45px;
+  right: 30%;
+ }
+ .promo-items a:hover{
+  -webkit-box-shadow: 1px 1px 13px #ff1010, -1px -1px 13px #e00808;
+  box-shadow: 1px 1px 13px #9b0505, -1px -1px 13px #ff0000;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+ }
+ 
+ .promo-items a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ .promo-items span:after {
+  content: "\00BB";
+  font-size: 2.5rem;
+  position: absolute;
+  opacity: 0;
+  top: -12px;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ .promo-items a:hover span {
+  padding-right: 15px;
+  
+ }
+ 
+ .promo-items a:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
+ 
+ /* END OF SECOND CONTENTS */
+
+ .third{
+  background-color: white;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+ } 
+ /* END OF THIRD */
+
+.return-top{
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  padding: 20px 23px 20px 23px;
+  border-radius: 65px;
+  background-color: rgb(192, 43, 43);
+  text-decoration: rgb(107, 100, 100);
+  z-index: 1;
+ }
+ .return-top img{
+  width: 30px;
+ }
+ /* end of return top button */
+ .first-contents,
+.second-contents,
+.third {
+    scroll-snap-align: start;
+    scroll-margin-top: 100px; /* Adjust this value based on your layout */
+}
+
+/* Define opacity transition for smoother reveal */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Add a class to elements you want to animate */
+.reveal {
+    opacity: 1;
+}
