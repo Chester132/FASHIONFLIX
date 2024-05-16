@@ -18,7 +18,7 @@
 
     <div class="side-bar-buttons">
       <button onclick="sideBar();"><img src="imgs/back-sidebar.png" alt=""></button>
-      <button class="clear-cart" onclick="removeItem();"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
+      <button class="clear-cart" onclick="removeItem('all');"><img class="clear-all" src="imgs/clearCart.png" alt=""></button>
     </div>
 
     <div class="container-added-carts"></div>
@@ -177,5 +177,6 @@
       window.location.href = "all-items.html";
     };
   </script>
+  <script src="js/displayItem_checkout.js"></script>
 </body>
 </html>
